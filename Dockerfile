@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY ACEest_Fitness.py ./
+COPY ../ACEest_Fitness.py ./
 COPY test_workout_manager.py ./
 COPY requirements.txt ./
 
