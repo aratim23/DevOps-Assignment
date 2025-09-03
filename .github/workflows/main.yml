@@ -2,7 +2,7 @@ name: CI for ACEest_Fitness
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build-and-test:
