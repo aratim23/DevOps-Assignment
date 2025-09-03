@@ -36,6 +36,7 @@ class FitnessTrackerApp:
 
         try:
             duration = int(duration_str)
+            print(f"Adding workout: {workout} for {duration} minutes")  # Added for debugging
             self.workouts.append({"workout": workout, "duration": duration})
             messagebox.showinfo("Success", f"'{workout}' added successfully!")
             self.workout_entry.delete(0, tk.END)
