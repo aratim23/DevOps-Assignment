@@ -1,0 +1,19 @@
+name: CI for ACEest_Fitness
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: docker build -t aceest_fitness_app .
+
+    - name: Run Tests inside Docker
+      run: docker run aceest_fitness_app
