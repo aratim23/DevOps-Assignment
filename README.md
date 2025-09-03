@@ -1,6 +1,9 @@
 ACEest_Fitness and Gym - DevOps Assignment
 ============================
 
+### BITS ID: 2024TM93091
+### Name: Arati Manoj Chandri
+
 ### Overview
 
 ACEest_Fitness and Gym is a simple desktop application to log and track workout routines. This project demonstrates core DevOps practices by integrating source control, automated unit testing with Pytest, containerization using Docker, and CI/CD automation with GitHub Actions.
