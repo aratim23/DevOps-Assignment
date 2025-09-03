@@ -1,5 +1,5 @@
 import pytest
-from ACEest_Fitness import WorkoutManager
+from ACEest_fitness import WorkoutManager
 
 def test_add_workout_valid():
     wm = WorkoutManager()
