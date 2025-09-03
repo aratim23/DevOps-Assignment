@@ -1,6 +1,19 @@
 import tkinter as tk
 from tkinter import messagebox
 
+class WorkoutManager:
+    def __init__(self):
+        self.workouts = []
+
+    def add_workout(self, workout, duration):
+        if not workout or not isinstance(duration, int):
+            raise ValueError("Invalid workout or duration")
+        self.workouts.append({"workout": workout, "duration": duration})
+
+    def get_workouts(self):
+        return self.workouts
+
+
 class FitnessTrackerApp:
     def __init__(self, master):
         self.master = master
